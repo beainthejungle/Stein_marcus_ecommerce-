@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <title>Product page</title>
+    </head>
+
+    <body class="bg-slate-800">
+        <nav class="py-12 px-8 bg-slate-700">
+            <a href="." class="text-2xl text-white font-bold">Marcus Bike Shop</a>
+        </nav>
+
+        <main class="py-8 px-8">
+            <div class="max-w-6xl mx-auto grid grid-cols-5 gap-6">
+                <div class="col-span-3">
+                    <figure class="p-6 bg-slate-700">
+                        <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Picture of a bicycle">
+                    </figure>
+
+                    <div class="mt-6 p-6 bg-slate-700 text-white">
+                        <h1 class="mb-6 text-3xl font-bold">Customizable bicycle</h1>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis sapien, pharetra in urna interdum, dictum hendrerit ante. Cras convallis lorem lectus, maximus vestibulum purus aliquam at. Maecenas tincidunt nibh libero, sit amet volutpat tortor vehicula quis. Nulla eleifend justo non dolor maximus, eu feugiat magna vulputate. Suspendisse purus eros, ultrices eu ornare in, viverra et sapien. Duis a sodales ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin iaculis mauris id lobortis laoreet. Proin consectetur a turpis non sagittis. Phasellus luctus magna aliquet, facilisis lorem sed, lacinia ex.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-span-2 p-6 bg-slate-700 text-white space-y-6">
+                    <h2 class="text-2xl font-bold">Details</h2>
+
+                    <div class="py-4 px-6 bg-slate-400 rounded-xl grid grid-cols-5 gap-6 items-center text-slate-900">
+                        <div class="col-span-1">
+                            <figure>
+                                <img src="https://static.thenounproject.com/png/5048549-200.png" class="w-8 h-8">
+                            </figure>
+                        </div>
+
+                        <div class="col-span-4">
+                            <h3 class="font-bold text-lg flex justify-between">
+                                <span>Frame - Step-through</span>
+                                <span>$180</span>
+                            </h3>
+
+                            <a href="#" class="show-modal underline" data-part="frame">Customize</a>
+                        </div>
+                    </div>
+
+                    <div class="py-4 px-6 bg-slate-400 rounded-xl grid grid-cols-5 gap-6 items-center text-slate-900">
+                        <div class="col-span-1">
+                            <figure>
+                                <img src="https://static.thenounproject.com/png/7099849-200.png" class="w-8 h-8">
+                            </figure>
+                        </div>
+
+                        <div class="col-span-4">
+                            <h3 class="font-bold text-lg flex justify-between">
+                                <span>Frame finish - Glossy</span>
+                                <span>$40</span>
+                            </h3>
+
+                            <a href="#" class="underline">Customize</a>
+                        </div>
+                    </div>
+
+                    <div class="py-4 px-6 bg-slate-400 rounded-xl grid grid-cols-5 gap-6 items-center text-slate-900">
+                        <div class="col-span-1">
+                            <figure>
+                                <img src="https://static.thenounproject.com/png/6468657-200.png" class="w-8 h-8">
+                            </figure>
+                        </div>
+
+                        <div class="col-span-4">
+                            <h3 class="font-bold text-lg flex justify-between">
+                                <span>Wheels - Road wheels</span>
+                                <span>$40</span>
+                            </h3>
+
+                            <a href="#" class="underline">Customize</a>
+                        </div>
+                    </div>
+
+                    <div class="py-4 px-6 bg-slate-400 rounded-xl grid grid-cols-5 gap-6 items-center text-slate-900">
+                        <div class="col-span-1">
+                            <figure>
+                                <img src="https://static.thenounproject.com/png/7099849-200.png" class="w-8 h-8">
+                            </figure>
+                        </div>
+
+                        <div class="col-span-4">
+                            <h3 class="font-bold text-lg flex justify-between">
+                                <span>Rim color - Blue</span>
+                                <span>$40</span>
+                            </h3>
+
+                            <a href="#" class="underline">Customize</a>
+                        </div>
+                    </div>
+
+                    <div class="py-4 px-6 bg-slate-400 rounded-xl grid grid-cols-5 gap-6 items-center text-slate-900">
+                        <div class="col-span-1">
+                            <figure>
+                                <img src="https://static.thenounproject.com/png/934919-200.png" class="w-8 h-8">
+                            </figure>
+                        </div>
+
+                        <div class="col-span-4">
+                            <h3 class="font-bold text-lg flex justify-between">
+                                <span>Chain - 8-speed chain</span>
+                                <span>$40</span>
+                            </h3>
+
+                            <a href="#" class="underline">Customize</a>
+                        </div>
+                    </div>
+
+                    <button class="py-4 px-6 bg-sky-800 hover:bg-sky-600 transition rounded-xl">Add to cart</button>
+                </div>
+            </div>
+        </main>
+
+        <div class="modal hidden p-6 flex items-center justify-center fixed inset-0 bg-black bg-opacity-70" id="customize-modal">
+            <div class="w-full max-w-5xl py-8 px-6 bg-slate-700 rounded-xl text-white">
+                <div class="py-4 px-6 bg-slate-400 rounded-xl grid grid-cols-5 gap-6 text-slate-900">
+                    <div class="col-span-1">
+                        <figure class="flex justify-center">
+                            <img src="https://static.thenounproject.com/png/5048549-200.png" class="w-20 h-20">
+                        </figure>
+                    </div>
+
+                    <div class="col-span-4">
+                        <h3 class="mb-6 font-bold text-2xl flex justify-between">
+                            <span>Frame - Step-through</span>
+                            <span>$180</span>
+                        </h3>
+
+                        <p class="mb-6">This is just some random information about the current frame. This is just to show you how it will look like with more information here.</p>
+
+                        <h4 class="mb-4 font-bold text-xl">Please select frame</h4>
+
+                        <div class="mb-4 py-4 px-6 bg-slate-500 text-white flex justify-between items-center rounded-xl">
+                            <div>
+                                <h5 class="text-lg font-bold">Full-suspension</h5>
+                                <p class="text-slate-300">$150</p>
+                            </div>
+
+                            <button class="py-4 px-6 bg-sky-800 hover:bg-sky-600 transition text-white rounded-xl select-variation" data-variation="Full-suspension">Select</button>
+                        </div>
+
+                        <div class="mb-4 py-4 px-6 bg-slate-500 text-white flex justify-between items-center rounded-xl">
+                            <div>
+                                <h5 class="text-lg font-bold">Step-through</h5>
+                                <p class="text-slate-300">$120</p>
+                            </div>
+
+                            <button class="py-4 px-6 bg-sky-800 hover:bg-sky-600 transition text-white rounded-xl select-variation" data-variation="Step-through">Select</button>
+                        </div>
+
+                        <div class="mb-4 py-4 px-6 bg-slate-500 text-white flex justify-between items-center rounded-xl">
+                            <div>
+                                <h5 class="text-lg font-bold">Diamond</h5>
+                                <p class="text-slate-300">$140</p>
+                            </div>
+
+                            <button class="py-4 px-6 bg-sky-800 hover:bg-sky-600 transition text-white rounded-xl select-variation" data-variation="Diamond">Select</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        const modal = document.getElementById('customize-modal');
+        const partButtons = document.querySelectorAll('.show-modal');
+
+        partButtons.forEach(el => el.addEventListener('click', event => {
+            modal.classList.remove('hidden');
+        }));
+
+        const variationButtons = document.querySelectorAll('.select-variation');
+
+        variationButtons.forEach(el => el.addEventListener('click', event => {
+            modal.classList.add('hidden');
+        }))
+    </script>
+</html>
